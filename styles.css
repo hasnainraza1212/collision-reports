@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+body{
+    min-width: 300px;
+    padding-bottom: 50px;
+}
+
+.logoBox img{
+    width: 100%;
+    height: 100%;
+
+}
+.policelogo{
+    width: 100px;
+    margin: 0 auto;
+}
+
+.policelogo img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:1080) and (min-width:768px) {
+    .logoBox{
+        width: 300px;
+    }
+}
+@media screen and (max-width:768px) and (min-width:576px) {
+    .logoBox{
+        width: 300px;
+        margin: 20px 0;
+    }
+}
+@media screen and (max-width:576px) {
+    .logoBox{
+        width: 200px;
+        margin: 20px 0;
+    }
+    .headerText{
+        font-size: 14px;
+    }
+}
+.box {
+    /* width: 1200px; */
+    /* position: absolute; */
+    transition: opacity 0.5s, transform 0.5s;
+    display: none;
+}
+
+/* .red { background-color: red; }
+.green { background-color: green; }
+.blue { background-color: blue; } */
+/* .contentContainer{
+    background-color: gray;
+} */
+.yesImage ,.noImage{
+    width: 50px;
+
+}
+.yesImage img,.noImage img{
+    width: 100%;
+    height: 100%;
+}
+.input{
+    max-width: 300px;
+}
+.input.select {
+    font-size: 15px;
+}
+.inputs{
+    width: 48%;
+}
+.inputs input,.inputs select, .inputs textarea{
+    width: 100%;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius:5px ;
+}
+input[type=radio]{
+    width: 20px;
+    height: 20px;
+}
+.dateInput select{
+width: 30%;
+
+}
+.addressText{
+    font-size: 13px;
+    color: rgb(114, 114, 114);
+}
+.addressInputContainer{
+    width: 48%;
+}
+.addressInput, .inputPhone {
+    width: 48%;
+}
+input#cell {
+    width: 220%;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 211, 211);
+
+}
+
+input#homePhone {
+    width: 220%;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 10px 50px;
+}
+
+input#businessPhone {
+    width: 220%;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 10px 50px;
+}
+.inputsContainer.insurance{
+    width: 100% !important;
+}
+.inputsContainer.insurance .inputs.insurance{
+    width: 100%;
+}
+.inputsContainer.insurance .inputs.insurance  textarea
+{
+    height: 100px;
+}
+.addressText.insuranceText{
+    border-bottom:1px solid rgb(211, 211, 211);
+    padding: 5px 0px 20px 0;
+}
+input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    accent-color: rgba(230, 101, 15, 0.068);
+}
+.checkboxContainer{
+    max-width: 600px;
+}
