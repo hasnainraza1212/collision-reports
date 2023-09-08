@@ -85,3 +85,65 @@ const businessInput = window.intlTelInput(businessPhone, {
   utilsScript:
     "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let dropZones = document.querySelectorAll('.dragContainer');
+    let uploadedFilesArray = []; // Create an array to store uploaded files
+
+    dropZones.forEach((zone, index) => {
+        let inputFile = zone.querySelector('input[type="file"]');
+        let uploadedImagesContainer = zone.querySelector(`#uploadedImagesContainer${index + 1}`);
+        
+        // Highlight drop zone on drag over
+        zone.addEventListener('dragover', function (e) {
+            e.preventDefault();
+            this.style.backgroundColor = '#e0e0e0';
+        });
+        
+        // Reset background on drag leave
+        zone.addEventListener('dragleave', function (e) {
+            this.style.backgroundColor = '';
+        });
+        
+        // Process the dropped file(s)
+        zone.addEventListener('drop', function (e) {
+            e.preventDefault();
+            this.style.backgroundColor = '';
+
+            let files = e.dataTransfer.files;
+            let maxFiles = this.querySelector('.m-0.text-center:nth-child(3)').textContent.split(" ")[4]; // Extract max files from the text
+
+            if (files.length > parseInt(maxFiles)) {
+                alert("You can only upload up to " + maxFiles + " files.");
+                return;
+            }
+
+            // Add the files to the array
+            for (let i = 0; i < files.length; i++) {
+                uploadedFilesArray.push(files[i]);
+
+                // Display the uploaded image in the respective container
+                let img = document.createElement('img');
+                img.src = URL.createObjectURL(files[i]);
+                img.className = 'uploadedImage';
+                uploadedImagesContainer.appendChild(img);
+            }
+
+            inputFile.files = files;
+        });
+        
+        // Click event to show file dialog
+        zone.querySelector('label').addEventListener('click', function () {
+            inputFile.click();
+        });
+    });
+});
+
+
+
+ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
