@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collision reports</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
@@ -37,7 +38,7 @@
                 </div>
             </div>
             <div class="position-relative contentContainer mb-5">
-                <!-- <div id="" class="box one">
+                <div id="" class="box one">
                     <h1>Welcome to our Interactive Online Collision Report</h1>
                     <p>Prior to proceeding with your online collision report, please call York Regional Police about your collision to receive an incident number. Please have your incident number on hand as you proceed to the next page of this report.</p>
                     <p>Please provide the incident number to everyone involved in the collision.</p>
@@ -47,8 +48,8 @@
                         <li>List Item</li>
                         <li>List Item</li>
                     </ul>
-                </div> -->
-                <!-- <div id="" class="box two">
+                </div>
+                <div id="" class="box two">
                     <h3 class="mt-5">Screening Questions</h3>
                     <div>
                         <h5 class="mt-3">Have you contacted York Regional Police about this collision? *</h5>
@@ -154,8 +155,8 @@
                             </p>
                     </div>
                     
-                </div> -->
-                <!-- <div id="" class="box three">
+                </div>
+                <div id="" class="box three">
                     <h3 class="mt-5">General Questions
 
                     </h3>
@@ -201,7 +202,7 @@
                                     <div class="ms-5 text-center mt-4">No</div>
                                 </div>
                                 <div>
-                                    <div class="noImage ms-5"><img src="./images/Unsure.png.crdownload" alt="No Sign"></div>
+                                    <div class="noImage ms-5"><img src="./images/Unsure.png" alt="No Sign"></div>
                                     <div class="ms-5 text-center mt-4">Unsure</div>
                                 </div>
                             </div>
@@ -218,7 +219,7 @@
                                     <div class="ms-5 text-center mt-4">No</div>
                                 </div>
                                 <div>
-                                    <div class="noImage ms-5"><img src="./images/Unsure.png.crdownload" alt="No Sign"></div>
+                                    <div class="noImage ms-5"><img src="./images/Unsure.png" alt="No Sign"></div>
                                     <div class="ms-5 text-center mt-4">Unsure</div>
                                 </div>
                             </div>
@@ -235,15 +236,15 @@
                                     <div class="ms-5 text-center mt-4">No</div>
                                 </div>
                                 <div>
-                                    <div class="noImage ms-5"><img src="./images/Unsure.png.crdownload" alt="No Sign"></div>
+                                    <div class="noImage ms-5"><img src="./images/Unsure.png" alt="No Sign"></div>
                                     <div class="ms-5 text-center mt-4">Unsure</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                 </div> -->
-                <!-- <div id="" class="box four">
+                 </div>
+                <div id="" class="box four">
                     <h3 class="mt-5">Collision Information</h3>
                     <div>
                         <div class=" mt-5">
@@ -253,17 +254,17 @@
                                     <input class="py-2 form-control px-2" type="date" name="" id="">
                                 </div>
                                 <div class="inputs">
-                                    <p class="fw-bold">Time of collision *</p>
+                                    <p class="fw-bold mt-4 mt-lg-0">Time of collision *</p>
                                     <input class="py-2 form-control px-2" type="time" name="" id="">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class=" mt-5">
+                        <div class=" mt-0 mt-lg-5">
                             <div class="inputsContainer justify-content-between d-flex">
                                 <div class="inputs">
-                                    <p class="fw-bold">Where did the collision occur? *</p>
+                                    <p class="fw-bold mt-4  mt-lg-0">Where did the collision occur? *</p>
                                     <select class="form-select form-control " aria-label="Default select example">
                                         <option value="Please select">Please select</option>
                                         <option value="Aurora">Aurora</option>
@@ -277,7 +278,7 @@
                                     </select>
                                 </div>
                                 <div class="inputs">
-                                    <p class="fw-bold">Address of collision *
+                                    <p class="fw-bold mt-4  mt-lg-0">Address of collision *
                                     </p>
                                     <input type="text" class="form-control py-2 px-2" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 
@@ -288,10 +289,10 @@
                     </div>
                     <div>
 
-                        <div class=" mt-5">
+                        <div class=" mt-0 mt-lg-5">
                             <div class="inputsContainer justify-content-between d-flex">
                                 <div class="inputs">
-                                    <p class="fw-bold">Weather at the time of the collision *</p>
+                                    <p class="fw-bold mt-4 mt-lg-0">Weather at the time of the collision *</p>
                                     <select class="form-select " aria-label="Default select example">
                                         <option value="Please select">Please select</option>
                                         <option value="Snowing">Snowing</option>
@@ -305,7 +306,7 @@
                                     </select>
                                 </div>
                                 <div class="inputs">
-                                    <p class="fw-bold">Road conditions at the time of the collision *</p>
+                                    <p class="fw-bold mt-4 mt-lg-0">Road conditions at the time of the collision *</p>
                                     <select class="form-select " aria-label="Default select example">
                                         <option value="Please select">Please select</option>
                                         <option value="Dry">Dry</option>
@@ -326,10 +327,10 @@
 
                     </div>
                     <div>
-                        <div class=" mt-5">
+                        <div class=" mt-0 mt-lg-5">
                             <div class="inputsContainer justify-content-between d-flex">
                                 <div class="inputs">
-                                    <p class="fw-bold">Is there damage to any other property? *</p>
+                                    <p class="fw-bold mt-4 mt-lg-0">Is there damage to any other property? *</p>
                                     <select class="form-select" aria-label="Default select example">
                                         <option value="Please select">Please select</option>
                                         <option value="Yes">Yes</option>
@@ -344,8 +345,8 @@
 
                         </div>
                     </div>
-                </div> -->
-                <!-- <div id="" class="box five">
+                </div>
+                <div id="" class="box five">
                     <h3 class="mt-5 ">Reporting Driver’s Information</h3>
                     <div>
                         <div class=" mt-5">
@@ -378,8 +379,8 @@
                                 <input type="text" class="form-control">
                             </div>
                             <div class="inputs">
-                                <p class="fw-bold">Date of Birth *</p>
-                                <div class="d-flex justify-content-between dateInput">
+                                <p class="fw-bold mt-5 mt-lg-0 ">Date of Birth *</p>
+                                <div class="d-flex flex-column flex-lg-row justify-content-between dateInput">
                                     <select class="form-select " aria-label="Default select example">
                                         <option value="Please select">DD</option>
                                         <option value="1">1</option>
@@ -541,22 +542,22 @@
                         </div>
 
                     </div>
-                    <div class=" mt-5">
+                    <div class=" mt-0 mt-lg-5">
                         <div class="inputsContainer justify-content-between d-flex">
-                            <div class="inputs">
-                                <p class="fw-bold">Driver’s FIRST NAME *</p>
+                            <div class="inputs ">
+                                <p class="fw-bold mt-5 mt-lg-0">Driver’s FIRST NAME *</p>
                                 <input class="py-2 form-control px-2" type="text" name="" id="">
                             </div>
                             <div class="inputs">
-                                <p class="fw-bold">Drivers Licence Number *</p>
+                                <p class="fw-bold mt-4 mt-lg-0">Drivers Licence Number *</p>
                                 <input class="py-2 form-control px-2" type="text" name="" id="">
                             </div>
                         </div>
                     </div>
-                    <div class=" mt-5">
+                    <div class=" mt-3 mt-lg-5">
                         <div class="inputsContainer justify-content-between d-flex">
                             <div class="inputs">
-                                <p class="fw-bold">In what Province or State was this Drivers Licence issued? * *</p>
+                                <p class="fw-bold mt-lg-0 mt-4">In what Province or State was this Drivers Licence issued? * *</p>
                                 <div class="d-flex justify-content-between">
                                     <select class=" js-example-basic-single form-select select2Selection form-control" aria-label="Default select example">
                                         <option value="Please select">Please select</option>
@@ -596,8 +597,8 @@
                                 <p class="addressText">Address line 2 *</p>
                                 <input class="py-2 form-control px-2" type="text" name="" id="">
                             </div>
-                            <div class="addressInputContainer mt-5 d-flex justify-content-between">
-                                <div class="addressInput">
+                            <div class="addressInputContainer flex-column flex-lg-row mt-5 d-flex justify-content-between">
+                                <div class="addressInput ">
 
                                     <input class="py-2 form-control px-2" type="text" name="" id="">
                                     <p class="addressText mt-2">City
@@ -610,7 +611,7 @@
 
 
                             </div>
-                            <div class="addressInputContainer mt-2 d-flex justify-content-between">
+                            <div class="addressInputContainer mt-2 d-flex flex-column flex-lg-row justify-content-between">
                                 <div class="addressInput">
                                     <input class="py-2 form-control px-2" type="text" name="" id="">
                                     <p class="addressText mt-2">Postal Code
@@ -624,9 +625,9 @@
 
 
                             </div>
-                            <div class="inputPhone">
+                            <div class="inputPhone ">
                                 <p class="fw-bold mt-4">Driver’s Cell Phone Number *</p>
-                                <input id="cell" type="tel" name="phone" />
+                                <input id="cell"  type="tel" name="phone" />
                             </div>
                             <div class="inputPhone">
                                 <p class="fw-bold mt-5">Driver’s Home Phone Number</p>
@@ -648,8 +649,8 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
-                <!-- <div id="" class="box six">
+                </div>
+                <div id="" class="box six">
                     <h3 class="mt-5">Reporting Driver’s Action</h3>
                     <div>
                         <div class=" mt-5">
@@ -704,8 +705,8 @@
 
                     </div>
 
-                </div> -->
-                <!-- <div id="" class="box seven">
+                </div>
+                <div id="" class="box seven">
                     <h3 class="mt-5">Reporting Vehicle Information</h3>
                     <div>
                         <div>
@@ -872,15 +873,14 @@
 
                     </div>
 
-                </div> -->
+                </div>
                 <div id="" class="box eight">
                     <h3 class="mt-5">Passengers’ Information</h3>
                     <div>
                         <p class="mt-3 addressText">If any passengers besides the driver were in the vehicle at the time of collision, please enter their name and phone number:</p>
                         <div>
-                            <p class="mt-3">The following questions require you to detail the information as best of your knowledge: *</p>
-                            <div class=" mt-5">
-                                <div class="inputsContainer justify-content-between d-flex">
+                            <div class=" ">
+                                <div class="inputsContainer flex-column justify-content-between d-flex">
                                     <div class="inputs">
 
                                         <div class=" mt-5">
@@ -902,10 +902,189 @@
                                                 </select>
 
                                             </div>
-
+                                        </div>
+                                       
+                                    </div>
+                                    <div class=" mt-5">
+                                        <div class="inputsContainer passengers justify-content-between d-flex">
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 1 - Surname*</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                 <p class="fw-bold">Passenger 1 - First Name
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 1 - Phone Number
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
                                         </div>
                                     </div>
-
+                                 <div class=" mt-5">
+                                        <div class="inputsContainer passengers justify-content-between d-flex">
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 2 - Surname*</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                 <p class="fw-bold">Passenger 2 - First Name
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 2 - Phone Number
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                 <div class=" mt-5">
+                                        <div class="inputsContainer passengers justify-content-between d-flex">
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 3 - Surname*</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                 <p class="fw-bold">Passenger 3 - First Name
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 3 - Phone Number
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                 <div class=" mt-5">
+                                        <div class="inputsContainer passengers justify-content-between d-flex">
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 4 - Surname*</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                 <p class="fw-bold">Passenger 4 - First Name
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 4 - Phone Number
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                 <div class=" mt-5">
+                                        <div class="inputsContainer passengers justify-content-between d-flex">
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 5 - Surname*</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                 <p class="fw-bold">Passenger 5 - First Name
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 5 - Phone Number
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                 <div class=" mt-5">
+                                        <div class="inputsContainer passengers justify-content-between d-flex">
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 6 - Surname*</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                 <p class="fw-bold">Passenger 6 - First Name
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 6 - Phone Number
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                 <div class=" mt-5">
+                                        <div class="inputsContainer passengers justify-content-between d-flex">
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 7 - Surname*</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                 <p class="fw-bold">Passenger 7 - First Name
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 7 - Phone Number
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                 <div class=" mt-5">
+                                        <div class="inputsContainer passengers justify-content-between d-flex">
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 8 - Surname*</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                 <p class="fw-bold">Passenger 8 - First Name
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 8 - Phone Number
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                 <div class=" mt-5">
+                                        <div class="inputsContainer passengers justify-content-between d-flex">
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 9 - Surname*</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                 <p class="fw-bold">Passenger 9 - First Name
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 9 - Phone Number
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                 <div class=" mt-5">
+                                        <div class="inputsContainer passengers justify-content-between d-flex">
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 10 - Surname*</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                 <p class="fw-bold">Passenger 10 - First Name
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                            <div class="inputs">
+                                                <p class="fw-bold">Passenger 10 - Phone Number
+                                                    *</p>
+                                                <input class="py-2 form-control px-2" type="text" name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
@@ -916,6 +1095,43 @@
 
                 </div>
                 <div id="" class="box nine">
+                    <h3 class="mt-5">Reporting Driver’s Statement</h3>
+                    <div>
+                        <p class="mt-5 fw-bold">In as much detail possible, tell us what happened *
+                        </p>
+                       <div class="bg-primary editorContainer" id="editor"></div>
+                    </div>
+                    <div class="mt-5">
+                        <h3>Attachments</h3>
+                        <div class="mt-5">
+                            <p class="mt-5 fw-bold">If you have photos or dash camera you would like police to review, please upload them here
+                            </p>
+                            <div class="dragContainer">
+                                <label for="dragToUpload1">
+                                    <div class="uploadContainer mb-4"><img src="./images/upload.png" alt="upload images"></div>
+                                    <p class="m-0 text-center ">Click or  drag files to this area to upload</p>
+                                    <p class="m-0 text-center">You can upload upto 5 files</p>
+                                    <div class="uploadedImagesContainer" id="uploadedImagesContainer1"></div> 
+                                </label>
+                                <input class="d-none" id="dragToUpload1" type="file">
+                            </div>
+                            <p class="mt-5 fw-bold">Please upload the following images *
+                            </p>
+                            <div class="dragContainer">
+                                <label for="dragToUpload2 bg-primary d-flex flex-column justify-content-center">
+                                    <div class="uploadContainer mb-4"><img src="./images/upload.png" alt="upload images"></div>
+                                    <p class="m-0 text-center ">Click or  drag files to this area to upload</p>
+                                    <p class="m-0 text-center">You can upload upto 4 files</p>
+                                    <div class="uploadedImagesContainer" id="uploadedImagesContainer2"></div> 
+                                </label>
+                                <input class="d-none" id="dragToUpload2" type="file">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- <div id="" class="box ten">
                     <h3 class="mt-5">Screening Questions</h3>
                     <div>
                         <h5 class="mt-3">Have you contacted York Regional Police about this collision? *</h5>
@@ -1020,118 +1236,12 @@
                         </p>
                     </div>
 
-                </div>
-                <div id="" class="box ten">
-                    <h3 class="mt-5">Screening Questions</h3>
-                    <div>
-                        <h5 class="mt-3">Have you contacted York Regional Police about this collision? *</h5>
-                        <div class=" mt-5">
-                            <p class="fw-bold mt-3">1. Did this collision happen in York Region?</p>
-                            <div class="YesNoImagesContainer d-flex">
-                                <div>
-                                    <div class="yesImage"><img src="./images/yes.png.crdownload" alt="Yes Sign"></div>
-                                    <div class="text-center mt-4">Yes</div>
-                                </div>
-                                <div>
-                                    <div class="noImage ms-5"><img src="./images/no.png.crdownload" alt="No Sign"></div>
-                                    <div class="ms-5 text-center mt-4">No</div>
-                                </div>
-                            </div>
-                            <p class="fw-bold mt-3">If you have received an incident number, please provide it
-                                *</p>
-                            <div>
-                                <input type="text" class="form-control input py-2" placeholder="example 2023-12345" aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                        </div>
-                        <div class=" mt-5">
-                            <p class="fw-bold mt-3">1. Did this collision happen in York Region? *</p>
-                            <div class="YesNoImagesContainer d-flex">
-                                <div>
-                                    <div class="yesImage"><img src="./images/yes.png.crdownload" alt="Yes Sign"></div>
-                                    <div class="text-center mt-4">Yes</div>
-                                </div>
-                                <div>
-                                    <div class="noImage ms-5"><img src="./images/no.png.crdownload" alt="No Sign"></div>
-                                    <div class="ms-5 text-center mt-4">No</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" mt-5">
-                            <p class="fw-bold mt-3">2. Did this collision happen in York Region? *</p>
-                            <div class="YesNoImagesContainer d-flex">
-                                <div>
-                                    <div class="yesImage"><img src="./images/yes.png.crdownload" alt="Yes Sign"></div>
-                                    <div class="text-center mt-4">Yes</div>
-                                </div>
-                                <div>
-                                    <div class="noImage ms-5"><img src="./images/no.png.crdownload" alt="No Sign"></div>
-                                    <div class="ms-5 text-center mt-4">No</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" mt-5">
-                            <p class="fw-bold mt-3">3. Did this collision happen in York Region? *</p>
-                            <div class="YesNoImagesContainer d-flex">
-                                <div>
-                                    <div class="yesImage"><img src="./images/yes.png.crdownload" alt="Yes Sign"></div>
-                                    <div class="text-center mt-4">Yes</div>
-                                </div>
-                                <div>
-                                    <div class="noImage ms-5"><img src="./images/no.png.crdownload" alt="No Sign"></div>
-                                    <div class="ms-5 text-center mt-4">No</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" mt-5">
-                            <p class="fw-bold mt-3">4. Did this collision happen in York Region? *</p>
-                            <div class="YesNoImagesContainer d-flex">
-                                <div>
-                                    <div class="yesImage"><img src="./images/yes.png.crdownload" alt="Yes Sign"></div>
-                                    <div class="text-center mt-4">Yes</div>
-                                </div>
-                                <div>
-                                    <div class="noImage ms-5"><img src="./images/no.png.crdownload" alt="No Sign"></div>
-                                    <div class="ms-5 text-center mt-4">No</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" mt-5">
-                            <p class="fw-bold mt-3">5. Did this collision happen in York Region? *</p>
-                            <div class="YesNoImagesContainer d-flex">
-                                <div>
-                                    <div class="yesImage"><img src="./images/yes.png.crdownload" alt="Yes Sign"></div>
-                                    <div class="text-center mt-4">Yes</div>
-                                </div>
-                                <div>
-                                    <div class="noImage ms-5"><img src="./images/no.png.crdownload" alt="No Sign"></div>
-                                    <div class="ms-5 text-center mt-4">No</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" mt-5">
-                            <p class="fw-bold mt-3">6. Did this collision happen in York Region? *</p>
-                            <div class="YesNoImagesContainer d-flex">
-                                <div>
-                                    <div class="yesImage"><img src="./images/yes.png.crdownload" alt="Yes Sign"></div>
-                                    <div class="text-center mt-4">Yes</div>
-                                </div>
-                                <div>
-                                    <div class="noImage ms-5"><img src="./images/no.png.crdownload" alt="No Sign"></div>
-                                    <div class="ms-5 text-center mt-4">No</div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="fw-bold mt-5">Unfortunately you may not proceed with the online collision reporting, as you have stated that your collision involved pedestrians or cyclists
-                            Please contact York Regional Police at 1-866-876-5423 ext. 7700
-                        </p>
-                    </div>
-
-                </div>
+                </div>-->
                 <div class="mt-5">
                     <button type="button" id="prev" class="btn btn-outline-danger">Prev</button>
                     <button type="button" id="next" class="btn ms-3 btn-outline-primary">next</button>
 
-                </div>
+                </div> 
 
             </div>
         </div>

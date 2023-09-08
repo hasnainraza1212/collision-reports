@@ -1,141 +1,254 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box !important;
 }
-body{
+
+body {
     min-width: 300px;
     padding-bottom: 50px;
 }
 
-.logoBox img{
+.logoBox img {
     width: 100%;
-    height: 100%;
-
+    height: auto;
 }
-.policelogo{
+
+.policelogo {
     width: 100px;
     margin: 0 auto;
 }
 
-.policelogo img{
+.policelogo img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
-@media screen and (max-width:1080) and (min-width:768px) {
-    .logoBox{
+
+@media screen and (max-width: 1080px) and (min-width: 768px) {
+    .logoBox {
         width: 300px;
     }
+    .dateInput select {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
 }
-@media screen and (max-width:768px) and (min-width:576px) {
-    .logoBox{
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .logoBox {
         width: 300px;
         margin: 20px 0;
     }
+    .inputs {
+        width: 100% !important;
+    }
+    .inputsContainer {
+        flex-direction: column;
+    }
+    .addressInputContainer {
+        width: 100% !important;
+    }
+    .addressInput,
+    .inputPhone {
+        width: 100% !important;
+    }
+    input#businessPhone,
+    input#homePhone,
+    input#cell {
+        width: 100% !important;
+    }
+    .dateInput select {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
 }
-@media screen and (max-width:576px) {
-    .logoBox{
+
+@media screen and (max-width: 576px) {
+    .logoBox {
         width: 200px;
         margin: 20px 0;
     }
-    .headerText{
+    .inputs {
+        width: 100% !important;
+    }
+    .inputsContainer {
+        flex-direction: column;
+    }
+    .headerText {
         font-size: 14px;
     }
+    .dateInput select {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    .addressInputContainer {
+        width: 100% !important;
+    }
+    .addressInput,
+    .inputPhone {
+        width: 100% !important;
+    }
+    input#businessPhone,
+    input#homePhone,
+    input#cell {
+        width: 100% !important;
+    }
+    .dateInput select {
+        width: 100% !important;
+    }
 }
+
 .box {
-    /* width: 1200px; */
-    /* position: absolute; */
     transition: opacity 0.5s, transform 0.5s;
     display: none;
 }
 
-/* .red { background-color: red; }
-.green { background-color: green; }
-.blue { background-color: blue; } */
-/* .contentContainer{
-    background-color: gray;
-} */
-.yesImage ,.noImage{
+.yesImage,
+.noImage {
     width: 50px;
+}
 
-}
-.yesImage img,.noImage img{
+.yesImage img,
+.noImage img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
-.input{
+
+.input {
     max-width: 300px;
 }
+
 .input.select {
     font-size: 15px;
 }
-.inputs{
-    width: 48%;
+
+.inputs {
+    width: 49%;
 }
-.inputs input,.inputs select, .inputs textarea{
+
+.inputs input,
+.inputs select,
+.inputs textarea {
     width: 100%;
     border: 1px solid rgb(211, 211, 211);
-    border-radius:5px ;
+    border-radius: 5px;
 }
-input[type=radio]{
+
+input[type=radio] {
     width: 20px;
     height: 20px;
 }
-.dateInput select{
-width: 30%;
 
+.dateInput select {
+    width: 30%;
 }
-.addressText{
+
+.addressText {
     font-size: 13px;
     color: rgb(114, 114, 114);
 }
-.addressInputContainer{
+
+.addressInputContainer {
     width: 48%;
 }
-.addressInput, .inputPhone {
-    width: 48%;
-}
-input#cell {
-    width: 220%;
-    padding: 10px 50px;
-    border-radius: 5px;
-    border: 1px solid rgb(211, 211, 211);
 
-}
-
-input#homePhone {
-    width: 220%;
-    border-radius: 5px;
-    border: 1px solid rgb(211, 211, 211);
-    padding: 10px 50px;
-}
-
-input#businessPhone {
-    width: 220%;
-    border-radius: 5px;
-    border: 1px solid rgb(211, 211, 211);
-    padding: 10px 50px;
-}
-.inputsContainer.insurance{
-    width: 100% !important;
-}
-.inputsContainer.insurance .inputs.insurance{
+.addressInput,
+.inputPhone {
     width: 100%;
 }
-.inputsContainer.insurance .inputs.insurance  textarea
-{
+
+input#cell,
+input#homePhone,
+input#businessPhone {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 10px 50px;
+}
+
+.inputsContainer.insurance {
+    width: 100% !important;
+}
+
+.inputsContainer.insurance .inputs.insurance {
+    width: 100%;
+}
+
+.inputsContainer.insurance .inputs.insurance textarea {
     height: 100px;
 }
-.addressText.insuranceText{
-    border-bottom:1px solid rgb(211, 211, 211);
+
+.addressText.insuranceText {
+    border-bottom: 1px solid rgb(211, 211, 211);
     padding: 5px 0px 20px 0;
 }
-input[type=checkbox]{
+
+input[type=checkbox] {
     width: 20px;
     height: 20px;
     border-radius: 5px;
     accent-color: rgba(230, 101, 15, 0.068);
 }
-.checkboxContainer{
+
+.checkboxContainer {
     max-width: 600px;
+}
+
+.inputsContainer.passengers {
+    width: 100% !important;
+}
+
+.inputsContainer.passengers .inputs {
+    width: 30%;
+}
+
+.dragContainer {
+    height: 250px;
+    width: 100%;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+}
+
+.dragContainer label {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadContainer {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+
+.uploadContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.editorContainer {
+    width: 100%;
+    min-height: 200px;
+}
+
+#uploadedImagesContainer1,
+#uploadedImagesContainer2 {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#uploadedImagesContainer1 img,
+#uploadedImagesContainer2 img {
+    width: 80px;
+    height: 70px;
+    margin-left: 10px;
+    border-radius: 5px;
 }
