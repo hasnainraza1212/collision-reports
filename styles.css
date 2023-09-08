@@ -8,10 +8,30 @@ body {
     min-width: 300px;
     padding-bottom: 50px;
 }
-
-.logoBox img {
+.carlogo img{
     width: 100%;
-    height: auto;
+    height: 100%;
+}
+#submit{
+    display: none;
+}
+.header {
+    background-color: #C20000;
+}
+.logo{
+    width: 140px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+.submitContainer{
+    width: 100%;
+    background-color: #e0ffc7;
+    border: 1px solid #b4d39b;
+    display: none;
 }
 
 .policelogo {
@@ -23,10 +43,22 @@ body {
     width: 100%;
     height: auto;
 }
+@media screen and (min-width:1200px) {
+    .carlogo{
+        margin-left: 80px;
+        margin-top: 20px;
+        width: 350px;
+    }
+}
 
-@media screen and (max-width: 1080px) and (min-width: 768px) {
-    .logoBox {
-        width: 300px;
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+    .logo, .carlogo {
+        width:60px;
+        margin: 20px auto;
+    }
+    .carlogo {
+        width: 250px;
+        margin: 20px auto;
     }
     .dateInput select {
         width: 100% !important;
@@ -35,9 +67,13 @@ body {
 }
 
 @media screen and (max-width: 768px) and (min-width: 576px) {
-    .logoBox {
-        width: 300px;
-        margin: 20px 0;
+    .logo {
+        width: 60px;
+        margin: 20px auto;
+    }
+    .carlogo{
+        width: 150px;
+        margin:  20px auto;
     }
     .inputs {
         width: 100% !important;
@@ -61,12 +97,20 @@ body {
         width: 100% !important;
         margin-bottom: 20px;
     }
+    .iti--allow-dropdown{
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 576px) {
-    .logoBox {
-        width: 200px;
-        margin: 20px 0;
+    .logo {
+        width: 50px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .carlogo{
+        width: 120px;
+        margin: 20px auto;
     }
     .inputs {
         width: 100% !important;
@@ -96,6 +140,12 @@ body {
     .dateInput select {
         width: 100% !important;
     }
+    .selectNoOfCollionVehicle{
+        width:100% !important;
+    }
+    .iti--allow-dropdown{
+        width: 100% !important;
+    }
 }
 
 .box {
@@ -112,7 +162,9 @@ body {
 .noImage img {
     width: 100%;
     height: auto;
+    cursor: pointer;
 }
+
 
 .input {
     max-width: 300px;
@@ -151,10 +203,12 @@ input[type=radio] {
 .addressInputContainer {
     width: 48%;
 }
-
+.inputFieldAddress{
+    width: 100%;
+}
 .addressInput,
 .inputPhone {
-    width: 100%;
+    width: 98%;
 }
 
 input#cell,
@@ -251,4 +305,83 @@ input[type=checkbox] {
     height: 70px;
     margin-left: 10px;
     border-radius: 5px;
+}
+.reviewAlertContainer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 5px;
+    border: .5px solid rgb(189, 189, 5);
+}
+.customBtn{
+    border-radius: 3px;
+}
+
+/* searchable select */
+.select2-container,.select2-selection{
+    width: 100% !important;
+}
+.select2-selection{
+    height: 40px !important;
+}
+.select2-selection__rendered{
+    display: flex !important;
+    align-items: center;
+    height: 100%;
+}
+.select2-selection__arrow{
+    top: 8px !important;
+}
+/* searchable select */
+.selectNoOfCollionVehicle{
+    width:48%;
+}
+.iti--allow-dropdown{
+    width: 50%;
+}
+.radioBtnYes{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+#yes label{
+    border: 5px solid green ;
+    background-color: red;
+}
+.yesImage, .noImages, .unSureImages{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: .1s ease-in;
+}
+.yesImage img, .noImages img, .unSureImages img{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.yesImage:hover, .noImages:hover, .unSureImages:hover{
+    border:1px solid red;
+    border-radius: 5px;
+
+}
+.option_box input:checked  ~ .yesImage, .option_box input:checked~ .noImages, .option_box input:checked~ .unSureImages{
+    border:2px solid red;
+    border-radius: 5px;
+}
+
+#yes, #no, #unSure{
+    display: none;
+}
+.labelText{
+    text-align: center;
+    margin-top: 10px;
+}
+.yesImage.sectionTen{
+    flex-direction: row;
 }
